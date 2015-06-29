@@ -1,6 +1,6 @@
 # wiston-honeybadger
 
-Honeybadger transport for winston
+[Honeybadger][hon] transport for [Winston][wjs]
 
 ## Getting Started
 Install the module with: `npm install wiston-honeybadger`
@@ -25,3 +25,6 @@ _(Nothing yet)_
 ## License
 Copyright (c) 2015 goliatone  
 Licensed under the MIT license.
+
+[hon]: http://honeybadger.io
+[wjs]: http://github.com/winstonjs/winston

@@ -28,7 +28,24 @@ winston.error('TEST ERROR!', errorMetadata, callback);
 ```
 
 ## Documentation
-_(Coming soon)_
+
+This transport uses the [honeybadger][npm-hon] package to send data to the mother ship. This is straight from that package's documentation.
+
+```javascript
+// The second argument is error tracking metadata, like user/session id 
+hb.send(err, {
+  context: {
+    user: 'jane',
+    email: 'a@b.net'
+  },
+  session: {},
+  headers: req.headers,
+  params: {},
+  cgi_data: {
+    'server-software': 'Node ' + process.version
+  }
+});
+```
 
 ## Examples
 _(Coming soon)_
@@ -44,4 +61,6 @@ Copyright (c) 2015 goliatone
 Licensed under the MIT license.
 
 [hon]: http://honeybadger.io
+[npm-hon]: https://www.npmjs.com/package/honeybadger
 [wjs]: http://github.com/winstonjs/winston
+

@@ -1,7 +1,7 @@
 {
   "name": "wiston-honeybadger",
   "description": "Honeybadger transport for winston",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/goliatone/wiston-honeybadger",
   "author": {
     "name": "goliatone",

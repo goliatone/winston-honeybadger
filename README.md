@@ -1,13 +1,30 @@
 # wiston-honeybadger
 
-[Honeybadger][hon] transport for [Winston][wjs]
+[Honeybadger][hon] transport for [Winston][wjs]. It only logs `error` level.
+
 
 ## Getting Started
-Install the module with: `npm install wiston-honeybadger`
+Install the module with: 
+```
+npm install wiston-honeybadger
+```
+
+To register the transport:
 
 ```javascript
-var wiston_honeybadger = require('wiston-honeybadger');
-wiston_honeybadger.awesome(); // "awesome"
+var winston = require('winston');
+require('wiston-honeybadger');
+
+
+var logger = new (winston.Logger)({
+  transports: [
+    new (winston.transports.Honeybadger)({ apiKey: 'YOUR_HONEYBADGER_API_KEY'})
+  ]
+});
+```
+
+```js
+winston.error('TEST ERROR!', errorMetadata, callback);
 ```
 
 ## Documentation

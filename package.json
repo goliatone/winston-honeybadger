@@ -30,6 +30,7 @@
     "dtest": "./node_modules/mocha/bin/mocha test/*_test.js -G -w --reporter spec --slow 500"
   },
   "dependencies": {
+    "assert-is": "^0.4.0",
     "gextend": "^0.1.6",
     "honeybadger": "^0.8.0",
     "winston": "^1.0.1"

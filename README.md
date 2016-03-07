@@ -1,4 +1,4 @@
-# wiston-honeybadger
+# winston-honeybadger
 
 [Honeybadger][hon] transport for [Winston][wjs]. It only logs `error` level.
 
@@ -6,14 +6,14 @@
 ## Getting Started
 Install the module with: 
 ```
-npm install wiston-honeybadger
+npm install winston-honeybadger
 ```
 
 To register the transport:
 
 ```javascript
 var winston = require('winston');
-require('wiston-honeybadger');
+require('wisnton-honeybadger');
 
 
 var logger = new (winston.Logger)({
